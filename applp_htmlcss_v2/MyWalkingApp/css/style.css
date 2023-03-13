@@ -6,6 +6,15 @@ body {
   margin: 0;
 
 }
+
+.container {
+  /* background: pink; */
+  max-width: 800px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 h1 {
   margin: 0;
   font-size: 0;
@@ -21,6 +30,7 @@ h2 {
 
  .hero {
    text-align: center;
+   max-width: 800px;
  }
 
 h3 {
@@ -44,14 +54,17 @@ img {
   display: inline-block;
 }
 
+
+
 /* header */
 
 header {
-  padding: 16px 32px;
+  padding: 16px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 .logo-pc {
   display: none;
@@ -61,6 +74,10 @@ header {
 
 .hero {
   background: rgb(114, 209, 247)  url(bg.png) repeat-x bottom;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .hero p {
@@ -72,22 +89,33 @@ header {
 }
 
 .hero img {
-  margin: 64px 0 0;
+  padding: 64px  16px 0;
 }
 
 .container {
   /* background: pink; */
-  display: block;
+  /* display: block; */
 }
 
 
 /* features */
 
+/* .features h2 {
+  padding-top: 32px;
+} */
+
 .features {
   padding: 64px 32px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* feature */
+.feature {
+
+}
 
 .picture {
   margin-top: 64px;
@@ -117,6 +145,11 @@ small {
   }
 
   /* header */
+  .container {
+    justify-content: space-between;
+  }
+
+
   
   .logo-sp {
     display: none;
@@ -126,8 +159,39 @@ small {
     display: inline;
   }
 
+
+  /* hero */
+
   .hero {
-    
+    display: flex;
+    /* margin: 0; */
+    align-items: center;
   }
 
+  .hero  div {
+    flex: 1;
+  }
+
+  .hero img {
+    margin-top: 0;
+  }
+
+  /* futures */
+  
+  .hero {
+    flex: 1;
+  }
+
+  
+  /* feature */
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  } 
+
+  .reversed {
+    flex-direction: row-reverse;
+  }
 }
